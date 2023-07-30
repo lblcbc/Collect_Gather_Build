@@ -151,7 +151,7 @@ def train(net, env, lr, max_episodes, lr_step_size, lr_gamma):
         masks = []
         entropy = 0
 
-        episode_reward = 0  # track total reward for each episode
+        episode_reward = 0  # track total rewards for each episode
 
         for _ in range(max_steps):
             state = torch.FloatTensor(state).unsqueeze(0)
