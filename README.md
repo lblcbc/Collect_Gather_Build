@@ -27,9 +27,11 @@ Plotted progress:
 Here the agent is programmed to behave with the same set of possible actions in the same grid. However, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: < 1 second. 
 
 Grid environment during starting steps:
+
 <img width="116" alt="Screenshot 2023-07-30 at 17 18 11" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/8ba257b4-2ef3-413f-a27a-d1609a93517d">
 
 Grid environment at the end of the one-and-only episode:
+
 <img width="96" alt="Screenshot 2023-07-30 at 17 08 34" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/ba7e12cf-b223-41dc-a02c-47fa5cdfdf16">
 
 We see the reward achieved is close to the maximum, but lower. Normally I would investigate this, by plotting the moves and rewards progression of the simulation and comparing it against a highly-trained agent, on the same map. However, in this case, I know where the RL agent is gaining; the simulation agent is only programmed with a simple A* algorithm that looks for the nearest resource, without taking into account the most efficient path of collecting ALL resources. This could of course be changed, but this exercise was more to compare the performance differences. It is clear simulations are much superior (1 sec run time vs 20+ highly-sensitive minutes) in the cases where we know the right solution, or at least the range of possible solutions, though it can be overconfident to assume we often do! Programming the RL agent took some tuning – with the main change being increasing the learning rate, and not scheduling it to decrease so quickly –, though I was positively surprised by how quickly the agent started to learn and perform optimally. Overall an interesting experience - unfortunately with the average hardware extending the RL agent leads to unpractical run times (a 10x10 grid of the same problem took 6+ HOURS to train). 
