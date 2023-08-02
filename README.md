@@ -25,7 +25,7 @@ Plotted progress:
 
 
 ## The images below show the final results using the Simulation approach:
-Here the agent is programmed to behave with the same set of possible actions in the same grid. However, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: <1 second. 
+Here the agent is programmed to behave with the same set of possible actions in the same grid environment. However, instead of having the agent learn how to act, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: <1 second. 
 
 Grid environment during starting steps:
 
