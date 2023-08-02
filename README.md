@@ -17,7 +17,7 @@ Grid environment during the end of training:
 
 <img width="389" alt="Screenshot 2023-07-15 at 16 01 40" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/5bd34bdf-1ff2-4691-b553-15e18dbf0096">
 
-The agent has built all possible 5 houses (it is standing on the 5th one, which is why we can't see the 5th house - ending the episode as per the termination condition).
+The agent has built all possible 5 houses in as few movement steps as possible. Having built all possible houses, the episode is ended, which is why we don't see the 5th house - the agent is standing on it :).
 
 Plotted progress:
 
