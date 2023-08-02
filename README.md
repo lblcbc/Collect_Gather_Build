@@ -24,7 +24,7 @@ Plotted progress:
 <img width="436" alt="Screenshot 2023-07-15 at 16 01 51" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/c7a1de67-5f33-4ea6-aa1d-2e72a82a87b3">
 
 
-## The images below show the final results using the Reinforcement Learning approach:
+## The images below show the final results using the Simulation approach:
 Here the agent is programmed to behave with the same set of possible actions in the same grid. However, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: <1 second. 
 
 Grid environment during starting steps:
