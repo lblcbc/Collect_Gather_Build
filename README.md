@@ -6,7 +6,7 @@ We later compare these to a more simple and straightforward simulation approach 
 
 
 ## The images below show the final results using the Reinforcement Learning approach:
-Agents collect experiences during each step within the episode, and optimise their network at the end of each episode, given what they have learned. Run (training) time: approx. 25 minutes.
+Agents collect experiences during each step within the episode, and optimise their network at the end of each episode, given what they have learned. Run (training) time: ~25 minutes.
 
 Grid environment during starting episodes:
 
@@ -24,7 +24,7 @@ Plotted progress:
 
 
 ## The images below show the final results using the Reinforcement Learning approach:
-Here the agent is programmed to behave with the same set of possible actions in the same grid. However, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: < 1 second. 
+Here the agent is programmed to behave with the same set of possible actions in the same grid. However, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: <1 second. 
 
 Grid environment during starting steps:
 
