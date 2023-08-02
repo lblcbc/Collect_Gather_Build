@@ -6,7 +6,7 @@ We later compare these to a more simple and straightforward simulation approach 
 
 
 ## The images below show the final results using the Reinforcement Learning approach:
-Agents collect experiences during each step within the episode, and optimise their network at the end of each episode, given what they have learned. Run (training) time: ~25 minutes.
+Agents collect experiences during each step within the episode, and optimise their network at the end of each episode, given what they have learned. Run (training) time: ~25 minutes (30,000 episodes).
 
 Grid environment during starting episodes (each episode increment in the figure represents 200 episodes, for legibility):
 
