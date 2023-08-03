@@ -53,19 +53,9 @@ class GridEnvironment:
 
     def is_episode_done(self):
         # End the episode after a maximum number of steps
-        if self.steps >= self.size**2 * 5:
+        if self.steps >= self.size**2 * 5 or (np.sum(self.grid == 1) == 0 and self.resource_count == 0):
             return True
 
-        # Use A* to check if there is a path to at least one resource
-        resource_positions = np.argwhere(self.grid == 1)
-        for resource_pos in resource_positions:
-            path = self.a_star(tuple(self.agent_pos), tuple(resource_pos), self.grid)
-            if path is not None:
-                # If there's a path to a resource, the episode is not done
-                return False
-
-        # If there's no path to any resource, the episode is done
-        return True
     
 
     def a_star(self, start, goal, grid):
