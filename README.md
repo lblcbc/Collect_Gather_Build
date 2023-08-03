@@ -17,7 +17,7 @@ Grid environment during the end of training:
 
 <img width="389" alt="Screenshot 2023-07-15 at 16 01 40" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/5bd34bdf-1ff2-4691-b553-15e18dbf0096">
 
-The agent has built all possible houses in as few movement steps as it can.
+The agent has built all 5 possible houses in as few movement steps as it can; as per our termination condition, building the last possible house ends the episode, which is why we don't see the 5th house, the agent is standing on it :).
 
 Plotted progress:
 
@@ -29,13 +29,16 @@ Here the agent is programmed to behave with the same set of possible actions in 
 
 Grid environment during starting steps:
 
-<img width="116" alt="Screenshot 2023-07-30 at 17 18 11" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/8ba257b4-2ef3-413f-a27a-d1609a93517d">
+<img width="95" alt="Screenshot 2023-08-03 at 12 32 10" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/21c8a07a-816b-4b98-8f85-3879c651463e">
+
+
 
 Grid environment at the end of the one-and-only episode:
 
-<img width="96" alt="Screenshot 2023-07-30 at 17 08 34" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/ba7e12cf-b223-41dc-a02c-47fa5cdfdf16">
+<img width="98" alt="Screenshot 2023-08-03 at 12 33 09" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/fddc0923-a8fe-4bd0-937f-fb9d336c1bfa">
+Following the same episode termination conditions, the agent's last action is to build the final possible 5th house, and then stays on that square, hiding the final house under itself. 
 
-We see the reward achieved is close to that achieved by the RL agent, but lower. Normally I would investigate this, by plotting the moves and rewards progression of the simulation and comparing it against a highly-trained agent, on the same map. However, in this case, I know where the RL agent is gaining; the simulation agent is only programmed with a simple A* algorithm that looks for the nearest resource, without taking into account the most efficient path of collecting ALL resources. This could of course be changed, but this exercise was more to compare the performance differences. It is clear simulations are much superior (1 sec run time vs 20+ highly-sensitive minutes) in the cases where we know the right solution, or at least the range of possible solutions (though we mustn't be overconfident to assume we often do!). Programming the RL agent took some tuning – with the main change being increasing the learning rate, and not scheduling it to decrease so quickly –, though I was positively surprised by how quickly the agent started to learn and perform quite optimally. Overall an interesting experience; unfortunately with "normal" hardware, extending the RL agent further led/leads to unpractical run times (a 10x10 grid of the same problem, for example, took 6+ HOURS to train). 
+We see the reward achieved by the sim agent is immediately higher than that of the RL agent - simulation rewards ranged from roughly 512 - 519, while the RL agent would peak right around to just below 500. This is no surprise as, in this case, we knew in advance what it took for the agent to operate and act optimally. Naturally, we could further extend the simulation by improving the A* algorithm to evaluate the most efficient path for collecting ALL resources, rather than going to the nearest resource one at a time. On this small resource-dense map, results would improve only marginally, but this evolution would be important on more scattered, larger maps. To summarise, it is clear simulations are much superior (1 sec run time vs 20+ highly-sensitive minutes) in the cases where we know the right solution, or at least the range of possible solutions (though we mustn't be overconfident to assume we often do!). Programming the RL agent took some tuning – with the main change being increasing the learning rate, and not scheduling it to decrease so quickly –, though I was positively surprised by how quickly the agent started to learn and perform quite optimally. Overall an interesting experience; unfortunately with "normal" hardware, extending the RL agent further to compare performance on larger maps led/leads to unpractical run times (a 10x10 grid of the same problem, for example, took 6+ HOURS to train). 
 
 
 
