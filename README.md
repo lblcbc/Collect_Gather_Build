@@ -8,18 +8,18 @@ I later compare these to a more simple and straightforward simulation approach o
 ## The images below show the final results using the Reinforcement Learning approach:
 Agents collect experiences during each step within the episode, and optimise their network at the end of each episode, given what they have learned. Run (training) time: ~25 minutes (30,000 episodes).
 
-Grid environment during starting episodes (each episode increment in the figure represents 200 episodes, for legibility):
+#### Grid environment during starting episodes (each episode increment in the figure represents 200 episodes, for legibility):
 
 <img width="380" alt="Screenshot 2023-07-15 at 15 36 47" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/ebe273f9-f797-4b6c-a994-2783797c1cf0">
 
 
-Grid environment during the end of training:
+#### Grid environment during the end of training:
 
 <img width="389" alt="Screenshot 2023-07-15 at 16 01 40" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/5bd34bdf-1ff2-4691-b553-15e18dbf0096">
 
 The agent has built all 5 possible houses in as few movement steps as it can; as per our termination condition, building the last possible house ends the episode, which is why we don't see the 5th house, the agent is standing on it :).
 
-Plotted progress:
+#### Plotted progress:
 
 <img width="436" alt="Screenshot 2023-07-15 at 16 01 51" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/c7a1de67-5f33-4ea6-aa1d-2e72a82a87b3">
 
@@ -27,13 +27,13 @@ Plotted progress:
 ## The images below show the final results using the Simulation approach:
 Here the agent is programmed to behave with the same set of possible actions in the same grid environment. However, instead of having the agent learn how to act, we use a simple A* search algorithm to find and move towards the nearest resource, collect it once reached, and build a house as soon as the agent has the required resource and is standing on an empty grid slot. We don't need to run multiple episodes on multiple grid configurations, as the agent has nothing to learn. Run time: <1 second. 
 
-Grid environment during starting steps:
+#### Grid environment during starting steps:
 
 <img width="95" alt="Screenshot 2023-08-03 at 12 32 10" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/21c8a07a-816b-4b98-8f85-3879c651463e">
 
 
 
-Grid environment at the end of the one-and-only episode:
+#### Grid environment at the end of the one-and-only episode:
 
 <img width="98" alt="Screenshot 2023-08-03 at 12 33 09" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/fddc0923-a8fe-4bd0-937f-fb9d336c1bfa">
 
