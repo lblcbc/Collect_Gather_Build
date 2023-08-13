@@ -1,7 +1,7 @@
 # Collect_Gather_Build
-In this project we build an Actor2Critic model built using Python and Pytorch, where an agent learns to navigate a 6x6 grid with randomly placed resources, collect those resources, and build houses with them - learning to maximise their reward. We run this for multiple episodes, within which we have each step of either moving, collecting a resource, or building a house. Each episode ends either when the agent has exhausted all of its moves (to speed up training and reduce overfitting on one grid configuration, even if unlikely), or when the agent has collected all resources and built all the houses it can with these resources.
+In this project I build an Actor2Critic model built using Python and Pytorch, where an agent learns to navigate a 6x6 grid with randomly placed resources, collect those resources, and build houses with them - learning to maximise their reward. We run this for multiple episodes, within which we have each step of either moving, collecting a resource, or building a house. Each episode ends either when the agent has exhausted all of its moves (to speed up training and reduce overfitting on one grid configuration, even if unlikely), or when the agent has collected all resources and built all the houses it can with these resources.
 
-We later compare these to a more simple and straightforward simulation approach of the same problem. In this method, we tell the agent how to act instead of having it learn. This leads to immediately optimal results... as long as we know what the optimal result(s) are when writing the sim!
+I later compare these to a more simple and straightforward simulation approach of the same problem. In this method, we tell the agent how to act instead of having it learn. This leads to immediately optimal results... as long as we know what the optimal result(s) are when writing the sim!
 
 
 
