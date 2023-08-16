@@ -21,7 +21,7 @@ The agent has built all 5 possible houses in as few movement steps as it can; as
 
 #### Plotted progress:
 
-<img width="436" alt="Screenshot 2023-07-15 at 16 01 51" src="https://github.com/lblcbc/ReinforcemenetLearning_Simulation/assets/136857271/c7a1de67-5f33-4ea6-aa1d-2e72a82a87b3">
+<img width="836" alt="RL Progress" src="https://github.com/lblcbc/Collect_Gather_Build/assets/136857271/45150ff4-321e-492e-a3af-6b4067d99066">
 
 
 ## The images below show the final results using the Simulation approach:
